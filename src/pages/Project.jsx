@@ -40,8 +40,8 @@ function ProjectPreview({ type }) {
 function Project() {
     return (
         <Layout>
-            <div className="absolute left-[19%] top-[25%] flex flex-col max-w-full max-md:left-[5%] max-md:max-w-[90%]">
-                <div className="max-w-full py-8 px-[4%]">
+            <div className="flex flex-col max-w-full max-md:max-w-[90%]">
+                <div className="max-w-full">
                     <div className="text-center mb-8">
                         <h1 className="text-3xl font-bold m-0 mb-2 text-gray-800">Projects</h1>
                         <p className="text-base font-normal m-0 text-gray-600">Here are my portfolio projects</p>

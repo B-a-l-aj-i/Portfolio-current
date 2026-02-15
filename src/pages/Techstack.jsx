@@ -17,7 +17,7 @@ const techItems = [
 function Techstack() {
     return (
         <Layout>
-            <div className="absolute left-[19%] top-[25%] right-[60px] max-w-[800px] p-8 max-md:left-[5%] max-md:right-[5%] max-md:max-w-[90%]">
+            <div className="max-w-[800px] max-md:max-w-[90%]">
                 <h1 className="text-center text-3xl font-bold mb-8 text-gray-800">My Tech Stack</h1>
                 <div className="grid grid-cols-3 gap-6 max-md:grid-cols-2">
                     {techItems.map((item, i) => (

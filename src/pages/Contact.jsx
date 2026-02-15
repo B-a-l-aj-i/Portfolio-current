@@ -14,7 +14,7 @@ function Contact() {
 
     return (
         <Layout>
-            <div className="absolute left-[19%] top-[25%] max-w-[600px] p-8 max-md:left-[5%] max-md:max-w-[90%]">
+            <div className="max-w-[600px] max-md:max-w-[90%]">
                 <h1 className="text-center text-3xl font-bold mb-8 text-gray-800">Send me a message!</h1>
                 <form onSubmit={handleSubmit} className="border border-gray-800 rounded-lg p-8 bg-white flex flex-col gap-6">
                     <input
