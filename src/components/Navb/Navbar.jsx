@@ -7,9 +7,8 @@ function Navbar() {
                 <div className="max-w-[900px] pl-[7%] font-bold text-[1.6rem]">
                     <Link to="/" className="no-underline text-inherit">
                         <p>
-                            <span className="inline-block w-[15px] h-[15px] bg-[rgb(156,212,231)] animate-rotate-square"> </span>
-                            {" "}BALAJI{" "}
-                            <span className="font-extralight text-[1.2rem] tracking-[0.3rem]">/ Frontend Developer</span>
+                            <span className="inline-block w-[15px] h-[15px] bg-green-200 animate-rotate-square"> </span>
+                            {" "}Balaji Mariappan{" "}
                         </p>
                     </Link>
                 </div>
