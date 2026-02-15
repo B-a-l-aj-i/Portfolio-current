@@ -38,11 +38,11 @@ function Home() {
           </p>
 
           <div className="flex items-center gap-4">
-            <button className="text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-[rgb(70,70,255)] hover:transition-[0.7s] hover:text-white hover:border-transparent">
+            <button className="text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-green-100 hover:text-green-800 hover:border-transparent">
               Resume
             </button>
             <Link to="/project">
-              <button className="text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-[rgb(70,70,255)] hover:transition-[0.7s] hover:text-white hover:border-transparent">
+              <button className="text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-green-100 hover:text-green-800 hover:border-transparent">
                 Projects
               </button>
             </Link>

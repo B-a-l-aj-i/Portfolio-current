@@ -39,7 +39,6 @@ function Contact() {
     return (
         <Layout>
             <div className="w-full max-w-md mx-auto">
-                <h1 className="text-center text-2xl font-bold mb-6 text-gray-800">Send me a message!</h1>
                 <form
                     ref={formRef}
                     onSubmit={handleSubmit}
@@ -78,7 +77,7 @@ function Contact() {
                     <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="ml-auto bg-black text-white px-4 py-2 rounded-lg text-sm flex items-center justify-center cursor-pointer hover:bg-gray-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                        className="ml-auto text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-green-100 hover:text-green-800 hover:border-transparent"
                     >
                         {isSubmitting ? "Sending..." : "Send"}
                     </button>
