@@ -4,18 +4,21 @@ const projects = [
     {
         title: "Recollect",
         link: "#",
+        image: "/recollect.png",
         desc: "Built Recollect, a bookmarking app using Next.js, TypeScript, Node.js, and Supabase.",
         tech: ["Next.js", "TypeScript", "Node.js", "Supabase"]
     },
     {
         title: "Dugout",
         link: "#",
+        image: "/dugout.png",
         desc: "Developed Dugout, an internal Slack viewer with Next.js, integrated Slack API to fetch and display messages from 30+ team members with OAuth authentication.",
         tech: ["Next.js", "Slack API", "OAuth"]
     },
     {
         title: "Cryops",
         link: "https://cryops.vercel.app/",
+        image: "/cryops.png",
         desc: "Built and launched a SaaS platform that auto-generates portfolio websites in under 5 minutes by pulling data from GitHub and LeetCode profiles.",
         tech: ["Next.js", "GitHub API", "LeetCode"]
     }
@@ -35,7 +38,11 @@ function Project() {
                             key={i}
                             className="border border-gray-200 rounded-lg bg-white overflow-hidden flex flex-col"
                         >
-                            <div className="aspect-video bg-gray-100 border-b border-gray-200" />
+                            <img
+                                src={project.image}
+                                alt={project.title}
+                                className="w-full aspect-video object-cover border-b border-gray-200"
+                            />
                             <div className="p-4 flex flex-col flex-1">
                                 <div className="flex items-start justify-between gap-2 mb-2">
                                     <h3 className="m-0 font-semibold text-base text-gray-800">
@@ -57,7 +64,7 @@ function Project() {
                                     {project.tech.map((t, j) => (
                                         <span
                                             key={j}
-                                            className="py-1 px-2 bg-black text-white rounded text-xs font-medium"
+                                            className="py-1 px-2 border border-gray-300 rounded-lg text-xs"
                                         >
                                             {t}
                                         </span>

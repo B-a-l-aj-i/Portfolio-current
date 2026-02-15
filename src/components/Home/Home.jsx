@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Layout from "../Layout/Layout";
-import pic from "../Home/unnamed.png";
 
 function Home() {
   return (
@@ -10,7 +9,7 @@ function Home() {
           <img
             className="w-48 h-48 rounded-full object-cover max-md:w-32 max-md:h-32"
             alt="profile"
-            src={pic}
+            src="/profilephoto.png"
           />
           <p className="mt-6 text-2xl font-semibold text-center">
             Balaji Mariappan
