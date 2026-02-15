@@ -64,7 +64,7 @@ function Project() {
                                     {project.tech.map((t, j) => (
                                         <span
                                             key={j}
-                                            className="py-1 px-2 border border-gray-300 rounded-lg text-xs"
+                                            className="inline-flex items-center justify-center py-1 px-2.5 border border-gray-300 rounded-md text-xs"
                                         >
                                             {t}
                                         </span>

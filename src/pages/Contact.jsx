@@ -43,7 +43,7 @@ function Contact() {
                 <form
                     ref={formRef}
                     onSubmit={handleSubmit}
-                    className="rounded-lg p-8 flex flex-col gap-5 border border-gray-300 bg-yellow-50"
+                    className="rounded-lg p-8 flex flex-col gap-5 border border-gray-300 bg-green-50"
                 >
                     <input
                         type="text"
@@ -78,7 +78,7 @@ function Contact() {
                     <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="ml-auto bg-black text-white px-3 py-1 rounded-md cursor-pointer hover:bg-gray-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                        className="ml-auto bg-black text-white px-4 py-2 rounded-lg text-sm flex items-center justify-center cursor-pointer hover:bg-gray-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                         {isSubmitting ? "Sending..." : "Send"}
                     </button>

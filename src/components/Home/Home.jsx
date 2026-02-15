@@ -5,7 +5,7 @@ function Home() {
   return (
     <Layout>
       <div className="flex flex-col justify-center items-center md:flex-row">
-        <div className="flex flex-col items-center p-8 rounded-xl border border-gray-300 w-[350px] h-[350px] sm:max-w-[46%]">
+        <div className="flex flex-col items-center p-8 rounded-lg border border-gray-300 w-[350px] h-[350px] sm:max-w-[46%]">
           <img
             className="w-48 h-48 rounded-full object-cover max-md:w-32 max-md:h-32"
             alt="profile"
@@ -38,11 +38,11 @@ function Home() {
           </p>
 
           <div className="flex items-center gap-4">
-            <button className="text-base font-medium text-black border border-black rounded-full py-2 px-5 cursor-pointer hover:bg-[rgb(70,70,255)] hover:transition-[0.7s] hover:text-white hover:border-transparent">
+            <button className="text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-[rgb(70,70,255)] hover:transition-[0.7s] hover:text-white hover:border-transparent">
               Resume
             </button>
             <Link to="/project">
-              <button className="text-base font-medium text-black border border-black rounded-full py-2 px-5 cursor-pointer hover:bg-[rgb(70,70,255)] hover:transition-[0.7s] hover:text-white hover:border-transparent">
+              <button className="text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-[rgb(70,70,255)] hover:transition-[0.7s] hover:text-white hover:border-transparent">
                 Projects
               </button>
             </Link>
