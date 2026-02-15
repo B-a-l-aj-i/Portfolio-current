@@ -29,14 +29,13 @@ function Project() {
         <Layout>
             <div className="w-full max-w-4xl mx-auto">
                 <div className="text-center mb-8">
-                    <h1 className="text-2xl font-bold m-0 mb-1 text-gray-800">Projects</h1>
-                    <p className="text-sm text-gray-600 m-0">Here are my portfolio projects</p>
+                    <p className="text-sm text-gray-600 m-0">Here's all the projects i've worked on</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {projects.map((project, i) => (
                         <article
                             key={i}
-                            className="border border-gray-200 rounded-lg bg-white overflow-hidden flex flex-col"
+                            className="hover:scale-105 transition-all duration-300 border border-gray-200 rounded-lg bg-white overflow-hidden flex flex-col"
                         >
                             <img
                                 src={project.image}
