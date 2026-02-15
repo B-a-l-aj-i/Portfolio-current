@@ -39,7 +39,7 @@ function Home() {
 
           <div className="flex items-center gap-4">
             <button className="text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-green-100 hover:text-green-800 hover:border-transparent">
-              Resume
+            <a href="https://drive.google.com/file/d/1zDOYfutSdXKgYfBrfP8b4F_ehyWBGmwT/view?usp=drive_link" target="_blank" rel="noreferrer">Resume</a>
             </button>
             <Link to="/project">
               <button className="text-base font-medium text-black border border-black rounded-lg py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-green-100 hover:text-green-800 hover:border-transparent">
