@@ -37,6 +37,11 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li className="font-extralight text-[1.2rem] cursor-pointer inline">
+                            <NavLink to="/experience" className={({ isActive }) => `no-underline inline-flex items-center justify-center min-w-[3.25rem] px-2 py-1.5 rounded-md text-sm text-center ${isActive ? "bg-green-100 text-green-800" : "text-inherit hover:bg-green-100 hover:text-green-800"}`}>
+                                Experience
+                            </NavLink>
+                        </li>
+                        <li className="font-extralight text-[1.2rem] cursor-pointer inline">
                             <NavLink to="/contact" className={({ isActive }) => `no-underline inline-flex items-center justify-center min-w-[3.25rem] px-2 py-1.5 rounded-md text-sm text-center ${isActive ? "bg-green-100 text-green-800" : "text-inherit hover:bg-green-100 hover:text-green-800"}`}>
                                 Contact
                             </NavLink>

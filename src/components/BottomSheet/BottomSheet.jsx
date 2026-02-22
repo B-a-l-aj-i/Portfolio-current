@@ -57,6 +57,9 @@ function BottomSheet({ isOpen, onClose }) {
                 <NavLink to="/project" className={navLinkClass} onClick={handleNavClick}>
                   Project
                 </NavLink>
+                <NavLink to="/experience" className={navLinkClass} onClick={handleNavClick}>
+                  Experience
+                </NavLink>
                 <NavLink to="/contact" className={navLinkClass} onClick={handleNavClick}>
                   Contact
                 </NavLink>
