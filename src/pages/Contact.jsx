@@ -38,31 +38,31 @@ function Contact() {
 
     return (
         <Layout>
-            <div className="w-full max-w-md mx-auto">
+            <div className="w-full max-w-lg lg:max-w-2xl max-h-full mx-auto">
                 <form
                     ref={formRef}
                     onSubmit={handleSubmit}
-                    className="rounded-lg p-8 flex flex-col gap-5 border border-gray-300 bg-green-50"
+                    className="rounded-lg p-8 flex flex-col gap-5 border border-gray-900 max-h-full"
                 >
                     <input
                         type="text"
                         name="name"
                         placeholder="Your name"
                         required
-                        className="py-2.5 px-0 bg-transparent border-0 border-b border-gray-300/80 text-base font-[inherit] outline-none placeholder:text-gray-400 focus:border-gray-500 transition-colors"
+                        className="py-2.5 px-0 bg-transparent border-0 border-b border-gray-900 text-base font-[inherit] outline-none placeholder:text-gray-400 focus:border-gray-500 transition-colors"
                     />
                     <input
                         type="email"
                         name="email"
                         placeholder="Your email"
                         required
-                        className="py-2.5 px-0 bg-transparent border-0 border-b border-gray-300/80 text-base font-[inherit] outline-none placeholder:text-gray-400 focus:border-gray-500 transition-colors"
+                        className="py-2.5 px-0 bg-transparent border-0 border-b border-gray-900 text-base font-[inherit] outline-none placeholder:text-gray-400 focus:border-gray-500 transition-colors"
                     />
                     <textarea
                         name="message"
                         placeholder="Your message"
                         required
-                        className="py-2.5 px-0 bg-transparent border-0 border-b border-gray-300/80 text-base font-[inherit] resize-y outline-none placeholder:text-gray-400 focus:border-gray-500 transition-colors min-h-[80px]"
+                        className="py-2.5 px-0 bg-transparent border-0 border-b border-gray-900 text-base font-[inherit] resize-y outline-none placeholder:text-gray-400 focus:border-gray-500 transition-colors min-h-[80px]"
                         rows={4}
                     />
                     {status && (
