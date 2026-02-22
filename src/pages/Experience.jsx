@@ -78,7 +78,7 @@ function Experience() {
                                         </div>
                                     </div>
 
-                                    <div className={`md:w-1/2 md:px-6 pl-8 md:pl-6 mt-2 md:mt-0 md:flex ${isEven ? "md:justify-start md:pl-4" : "md:justify-end md:pr-4"}`}>
+                                    <div className={`md:w-[900px] md:px-6 pl-8 md:pl-6 mt-2 md:mt-0 md:flex ${isEven ? "md:justify-start md:pl-[200px]" : "md:justify-end md:pr-[200px]"}`}>
                                         <motion.article
                                             className="bg-white rounded-lg border border-gray-200 shadow-sm p-5 relative"
                                             initial={{ opacity: 0, y: 12 }}
