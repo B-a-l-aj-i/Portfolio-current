@@ -6,7 +6,7 @@ function Layout({ children }) {
             <div className="flex-1 flex items-center justify-center w-full px-4 py-8">
                 {children}
             </div>
-            <footer className="mt-auto bg-white h-16 w-full">
+            <footer className="mt-auto bg-white h-16 w-full max-md:hidden">
                 <div className="flex justify-evenly items-center">
                     <div className="flex flex-col">
                         <p className="m-0 mb-1 font-bold">Call</p>
