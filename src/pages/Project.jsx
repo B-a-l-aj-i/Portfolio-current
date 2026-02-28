@@ -1,4 +1,5 @@
 import Layout from "../components/Layout/Layout";
+import { motion } from "framer-motion";
 
 const projects = [
     {
@@ -33,9 +34,12 @@ function Project() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {projects.map((project, i) => (
-                        <article
+                        <motion.article
                             key={i}
                             className="hover:scale-105 transition-all duration-300 border border-gray-200 rounded-lg bg-white overflow-hidden flex flex-col"
+                            initial={{ opacity: 0, y: 20, scale: 0.96 }}
+                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                            transition={{ duration: 0.55, delay: i * 0.12, ease: [0.25, 0.46, 0.45, 0.94] }}
                         >
                             <img
                                 src={project.image}
@@ -70,7 +74,7 @@ function Project() {
                                     ))}
                                 </div>
                             </div>
-                        </article>
+                        </motion.article>
                     ))}
                 </div>
             </div>

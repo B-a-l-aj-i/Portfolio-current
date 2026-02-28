@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Layout from "../components/Layout/Layout";
+import DrawingBorder from "../components/DrawingBorder/DrawingBorder";
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "";
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "";
@@ -38,11 +39,16 @@ function Contact() {
 
     return (
         <Layout>
-            <div className="w-full max-w-lg lg:max-w-2xl max-h-full mx-auto">
+            <DrawingBorder
+                className="w-full max-w-lg lg:max-w-2xl mx-auto"
+                strokeClassName="stroke-gray-300"
+                strokeWidth={1}
+                duration={1.5}
+            >
                 <form
                     ref={formRef}
                     onSubmit={handleSubmit}
-                    className="rounded-lg p-8 flex flex-col gap-5 border border-gray-900 max-h-full"
+                    className="rounded-lg p-8 flex flex-col gap-5 shadow-sm max-h-full bg-white"
                 >
                     <input
                         type="text"
@@ -82,7 +88,7 @@ function Contact() {
                         {isSubmitting ? "Sending..." : "Send"}
                     </button>
                 </form>
-            </div>
+            </DrawingBorder>
         </Layout>
     );
 }

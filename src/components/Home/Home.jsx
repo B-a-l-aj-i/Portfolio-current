@@ -1,22 +1,31 @@
 import { Link } from "react-router-dom";
 import Layout from "../Layout/Layout";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
     <Layout>
       <div className="flex flex-col justify-center items-center md:flex-row">
-        <div className="flex flex-col items-center p-8 rounded-lg border border-gray-300 w-[350px] h-[350px] sm:max-w-[46%]">
-          <img
-            className="w-48 h-48 rounded-full object-cover max-md:w-32 max-md:h-32"
-            alt="profile"
-            src="/profilephoto.png"
-          />
-          <p className="mt-6 text-2xl font-semibold text-center">
-            Balaji Mariappan
-          </p>
-          <span className="text-base font-light tracking-widest">
-             Fullstack Engineer
-          </span>
+        <div className="w-[350px] sm:max-w-[46%]">
+          <motion.div
+            className="flex flex-col items-center p-8 rounded-lg bg-white w-full h-full"
+            initial={{ boxShadow: "0 0 0 0 rgba(0,0,0,0)" }}
+            animate={{ boxShadow: "0 10px 40px -10px rgba(0,0,0,0.15)" }}
+            transition={{ duration: 1, ease: "anticipate" }}
+            whileHover={{ boxShadow: "0 20px 60px -15px rgba(0,0,0,0.25)" }}
+          >
+            <img
+              className="w-48 h-48 rounded-full object-cover max-md:w-32 max-md:h-32"
+              alt="profile"
+              src="/profilephoto.png"
+            />
+            <p className="mt-6 text-2xl font-semibold text-center">
+              Balaji Mariappan
+            </p>
+            <span className="text-base font-light tracking-widest">
+              Fullstack Engineer
+            </span>
+          </motion.div>
         </div>
 
         <div className="flex flex-col justify-center gap-8 w-full sm:max-w-[54%] p-6 text-left">
