@@ -18,6 +18,13 @@ function Contact() {
             setStatus({ type: "error", message: "Email service not configured. Add VITE_EMAILJS_* env variables." });
             return;
         }
+        const emailInput = formRef.current?.elements?.namedItem?.("email");
+        const email = emailInput?.value?.trim() ?? "";
+        const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        if (!isValidEmail) {
+            setStatus({ type: "error", message: "Invalid email. Message not sent." });
+            return;
+        }
         setIsSubmitting(true);
         setStatus(null);
 
